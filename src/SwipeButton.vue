@@ -199,6 +199,7 @@ export default {
     },
   },
   mounted() {
+    this.endPoint = this.getEndingPoint();
     document.addEventListener('mousemove', this.continueSwipe);
     document.addEventListener('mouseup', this.endSwipe);
   },
